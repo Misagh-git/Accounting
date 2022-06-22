@@ -5,5 +5,6 @@ from .views import homepage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homepage)
+    path('', homepage),
+    path('inventory/',include('inventory.urls'))
 ]
