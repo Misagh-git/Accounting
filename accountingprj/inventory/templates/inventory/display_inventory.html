@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    This Page contain for inventory List
+    <div class="Inventorys">
+        {% for inventory in Inventorys%}
+            <div class="Inventory">
+                <h2> {{inventory.inventory_name}}</h2>
+
+            </div>
+        {% endfor %}
+
+    </div>
 </body>
 </html>

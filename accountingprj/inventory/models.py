@@ -7,3 +7,7 @@ class Inventory(models.Model):
     inventory_Description=models.TextField()
     #inventory_creator
     #inventory_create_time
+
+    def __str__(self):
+        return self.inventory_name
+
